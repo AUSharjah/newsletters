@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news7/</loc>
+    <lastmod>2019-01-28T15:55:00+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/email/</loc>
+    <lastmod>2019-01-27T11:10:12+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/issue/</loc>
+    <lastmod>2019-01-27T11:10:12+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news8/</loc>
+    <lastmod>2019-01-27T10:37:45+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news6/</loc>
+    <lastmod>2019-01-27T10:37:39+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news5/</loc>
+    <lastmod>2019-01-27T10:37:34+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news4/</loc>
+    <lastmod>2019-01-27T10:37:31+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news3/</loc>
+    <lastmod>2019-01-27T10:37:27+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news2/</loc>
+    <lastmod>2019-01-27T10:36:44+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/news1/</loc>
+    <lastmod>2019-01-27T10:13:45+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/201902/</loc>
+    <lastmod>2019-01-28T15:55:00+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/</loc>
+    <lastmod>2019-01-28T15:55:00+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://news.aus.edu/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

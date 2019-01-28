@@ -1,0 +1,283 @@
+body {
+  font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";
+}
+
+table {
+  max-width: 100%;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  outline: none;
+}
+
+h1,
+h3 {
+  font-family: "TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif";
+  color: #b23428;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+div.body,
+span.summary {
+  color: #4d4d4d;
+  line-height: 22px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  overflow: hidden;
+}
+
+div.body p,
+span.summary p {
+  margin-top: 0;
+}
+
+.active .body p:last-child {
+  margin-bottom: 0;
+}
+
+.news-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.news-2 .news-2-item {
+  width: 48%;
+}
+
+.news-2 .news-2-item h3 {
+  margin-bottom: 10px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.news-2 .news-2-item .body {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 154px;
+}
+
+.news-2 .news-2-item a.click2 span:nth-child(2) {
+  display: none;
+}
+
+.news-2 .news-2-item.wide {
+  width: 100%;
+}
+
+.news-2 .news-2-item.wide .body {
+  height: 70px;
+}
+
+.news-2 .news-2-item.active {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.news-2 .news-2-item.active h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.news-2 .news-2-item.active a.click2 span:nth-child(1) {
+  display: none;
+}
+
+.news-2 .news-2-item.active a.click2 span:nth-child(2) {
+  display: inline-block;
+}
+
+.news-2 .news-2-item.active .mc-summary {
+  display: none;
+}
+
+a.click,
+a.click2 {
+  color: #b23428;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  outline: none;
+  text-decoration: none;
+}
+
+.mcclearfix {
+  overflow: auto;
+}
+
+.mcclearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.news-3 {
+  position: relative;
+  padding: 5px 0;
+}
+
+.news-3 .title {
+  display: table-row;
+}
+
+.news-3 .title div {
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-3 .title div:first-of-type {
+  width: 45%;
+}
+
+.news-3 .title h3 {
+  margin: 15px;
+}
+
+.news-3 .title .addthis_inline_share_toolbox {
+  position: absolute;
+  width: 150% !important;
+  padding-left: 15px;
+  bottom: -10px;
+}
+
+.news-3 a {
+  outline: none;
+  text-decoration: none;
+  color: #b23428;
+}
+
+.news-3 a.click3 {
+  color: #4d4d4d;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.news-3 a.click3 span:nth-child(2) {
+  display: none;
+}
+
+.news-3.active {
+  padding-bottom: 30px;
+}
+
+.news-3.active a.click3 {
+  bottom: 0;
+  color: #b23428 !important;
+}
+
+.news-3.active a.click3 span:nth-child(1) {
+  display: none;
+}
+
+.news-3.active a.click3 span:nth-child(2) {
+  display: inline-block;
+}
+
+.news-3.active .body {
+  margin-top: 15px;
+}
+
+#news1 {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+#news1 .body {
+  height: 110px;
+  text-align: justify;
+}
+
+#news1 a.click {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+#news1 a.click span:nth-child(2) {
+  display: none;
+}
+
+#news1.active a.click span:nth-child(1) {
+  display: none;
+}
+
+#news1.active a.click span:nth-child(2) {
+  display: inline-block;
+}
+
+#news1.active .mc-summary {
+  display: none;
+}
+
+.addthis_inline_share_toolbox {
+  margin: 5px 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: #4d4d4d;
+  color: #fff;
+  padding: 10px;
+  background-image: url(https://out.aus.edu/static/footer_back.png);
+  max-width: 100%;
+}
+
+.footer td {
+  text-align: center;
+}
+
+.social a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.social a img {
+  width: 40px;
+  margin: 10px;
+}
+
+.social td {
+  text-align: center;
+  color: #fff;
+}
+
+ul {
+  margin: 16px 0;
+  padding: 0;
+  color: #2e2e2e;
+}
+
+ul li:before {
+  content: '-';
+  margin-right: 5px;
+}
+/*# sourceMappingURL=style.css.map */
