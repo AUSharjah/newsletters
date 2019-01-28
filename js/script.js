@@ -115,33 +115,10 @@ $('.click2').click(function() {
 
 //TODO : Fix News & Details Replace
 $(document).ready(function() {
-    let target = window.location.hash.substr(1);
-    if (!target) {
-        target = window.location.href.substr(window.location.href.indexOf('news'), 5);
-    }
-    if (target) {
+
+    let target = window.location.href.substr(window.location.href.length - 6, 5);
+    console.log(target);
+    if (target.substr(0, 4) === "news") {
         $('[href="#' + target + '"]').trigger("click");
     }
-
-
-
-
-
-    // $(".newsAction").mouseenter(function() {
-    //     // $("meta[property='og\\:title']").attr("content", $(this).attr("data-title") + "");
-    //     // $("meta[name='twitter\\:image\\:alt']").attr("content", $(this).attr("data-title") + "");
-    //     // $("meta[property='og\\:description']").attr("content", $(this).attr("data-description"));
-    //     // $("meta[property='og\\:image']").attr("content", $(this).attr("data-image"));
-    //     // $("meta[property='og\\:url']").attr("content", $(this).attr("data-url"));
-    // });
-    // $(document).click(function(e) {
-    //     // Check for left button
-    //     if (e.button == 0) {
-    //         locked = true;
-    //         setTimeout(() => {
-    //             locked = false;
-    //         }, 500)
-    //     }
-    // });
-
 });
