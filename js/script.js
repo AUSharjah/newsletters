@@ -8,12 +8,14 @@ jQuery.fn.animateAuto = function(prop, speed, callback) {
         height = elem.css("height"),
             width = elem.css("width"),
             elem.remove();
+        height = height.replace('px', '') * 1.05 + 'px';
+        if (prop === "height") {
 
-        if (prop === "height")
+            // console.log('h : ' + height + " | " + height.replace('px', '') * 1.5);
             el.animate({
                 "height": height
             }, speed, callback);
-        else if (prop === "width")
+        } else if (prop === "width")
             el.animate({
                 "width": width
             }, speed, callback);

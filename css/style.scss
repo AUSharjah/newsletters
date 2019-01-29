@@ -1,9 +1,28 @@
-$font-Head: 'TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif';
-$font-Body: 'Helvetica Neue,Helvetica,Arial,sans-serif';
-$font-read: 'Helvetica Neue,Helvetica,Arial,sans-serif';
+$font-Head: 'Times New Roman',
+Times,
+serif;
+$font-Body: 'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+$font-read: 'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint==phone) {
+
+        // 600px
+        @media (max-width: 850px) {
+            @content;
+        }
+    }
+}
 
 body {
     font-family: $font-Body;
+    font-size: 1rem;
 }
 
 table {
@@ -12,19 +31,9 @@ table {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
     outline: none;
-}
-
-h1,
-h3 {
-    font-family: $font-Head;
-    color: #b23428;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-
 }
 
 div.body,
@@ -39,11 +48,24 @@ span.summary {
     }
 }
 
+span.summary {
+    text-align: justify;
+    display: block;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
 .active {
     .body {
         p:last-child {
             margin-bottom: 0;
         }
+    }
+
+    span.summary {
+        display: none;
     }
 }
 
@@ -67,9 +89,7 @@ span.summary {
         }
 
         .body {
-            margin-top: 5px;
-            margin-bottom: 20px;
-            height: 154px;
+            height: 0px;
         }
 
         a.click2 {
@@ -103,10 +123,12 @@ span.summary {
                     display: inline-block;
                 }
 
+                margin-bottom: 10px;
             }
 
-            .mc-summary {
-                display: none;
+            .body {
+                margin-top: 5px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -115,15 +137,13 @@ span.summary {
 a.click,
 a.click2 {
     color: #b23428;
-    margin-bottom: 10px;
+    padding: 15px 0;
     display: block;
     text-transform: uppercase;
     font-size: 0.8em;
     outline: none;
     text-decoration: none;
 }
-
-
 
 .mcclearfix {
     overflow: auto;
@@ -140,7 +160,6 @@ a.click2 {
     padding: 5px 0;
 
     .title {
-
         display: table-row;
 
         div {
@@ -152,11 +171,10 @@ a.click2 {
 
         div:first-of-type {
             width: 45%;
-
         }
 
         h3 {
-            margin: 15px;
+            margin-left: 15px;
         }
 
         .addthis_inline_share_toolbox {
@@ -170,7 +188,6 @@ a.click2 {
     a {
         outline: none;
         text-decoration: none;
-
 
         color: #b23428;
     }
@@ -192,7 +209,6 @@ a.click2 {
 
     &.active {
         padding-bottom: 30px;
-
 
         a.click3 {
             bottom: 0;
@@ -218,8 +234,7 @@ a.click2 {
     padding-bottom: 60px;
 
     .body {
-        height: 110px;
-        text-align: justify;
+        height: 0;
     }
 
     a.click {
@@ -241,10 +256,6 @@ a.click2 {
             span:nth-child(2) {
                 display: inline-block;
             }
-        }
-
-        .mc-summary {
-            display: none;
         }
     }
 }
@@ -279,7 +290,6 @@ a.click2 {
     }
 
     td {
-
         text-align: center;
         color: #fff;
     }
@@ -295,5 +305,41 @@ ul {
             content: '-';
             margin-right: 5px;
         }
+    }
+}
+
+.active {
+    .body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: left !important;
+        }
+
+        // text-align: left !important;
+    }
+}
+
+a.click,
+a.click2,
+a.click3 {
+    @include respond(phone) {
+        font-size: 1rem !important;
+    }
+}
+
+h1,
+h3 {
+    font-family: $font-Head !important;
+    color: #b23428;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    @include respond(phone) {
+        margin-bottom: 0.5rem !important;
     }
 }

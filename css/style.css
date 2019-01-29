@@ -1,5 +1,6 @@
 body {
-  font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
 }
 
 table {
@@ -9,18 +10,9 @@ table {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
   outline: none;
-}
-
-h1,
-h3 {
-  font-family: "TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif";
-  color: #b23428;
-  text-align: left;
-  margin: 0;
-  padding: 0;
 }
 
 div.body,
@@ -37,8 +29,21 @@ span.summary p {
   margin-top: 0;
 }
 
+span.summary {
+  text-align: justify;
+  display: block;
+}
+
+span.summary p {
+  margin-bottom: 0;
+}
+
 .active .body p:last-child {
   margin-bottom: 0;
+}
+
+.active span.summary {
+  display: none;
 }
 
 .news-2 {
@@ -72,9 +77,7 @@ span.summary p {
 }
 
 .news-2 .news-2-item .body {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  height: 154px;
+  height: 0px;
 }
 
 .news-2 .news-2-item a.click2 span:nth-child(2) {
@@ -99,6 +102,10 @@ span.summary p {
   font-size: 1.5rem;
 }
 
+.news-2 .news-2-item.active a.click2 {
+  margin-bottom: 10px;
+}
+
 .news-2 .news-2-item.active a.click2 span:nth-child(1) {
   display: none;
 }
@@ -107,14 +114,15 @@ span.summary p {
   display: inline-block;
 }
 
-.news-2 .news-2-item.active .mc-summary {
-  display: none;
+.news-2 .news-2-item.active .body {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 a.click,
 a.click2 {
   color: #b23428;
-  margin-bottom: 10px;
+  padding: 15px 0;
   display: block;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -153,7 +161,7 @@ a.click2 {
 }
 
 .news-3 .title h3 {
-  margin: 15px;
+  margin-left: 15px;
 }
 
 .news-3 .title .addthis_inline_share_toolbox {
@@ -211,8 +219,7 @@ a.click2 {
 }
 
 #news1 .body {
-  height: 110px;
-  text-align: justify;
+  height: 0;
 }
 
 #news1 a.click {
@@ -231,10 +238,6 @@ a.click2 {
 
 #news1.active a.click span:nth-child(2) {
   display: inline-block;
-}
-
-#news1.active .mc-summary {
-  display: none;
 }
 
 .addthis_inline_share_toolbox {
@@ -279,5 +282,42 @@ ul {
 ul li:before {
   content: '-';
   margin-right: 5px;
+}
+
+.active .body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 850px) {
+  .active .body {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 850px) {
+  a.click,
+  a.click2,
+  a.click3 {
+    font-size: 1rem !important;
+  }
+}
+
+h1,
+h3 {
+  font-family: "Times New Roman", Times, serif !important;
+  color: #b23428;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 850px) {
+  h1,
+  h3 {
+    margin-bottom: 0.5rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
